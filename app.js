@@ -70,7 +70,7 @@ app.get("/players/:playerId", async (request, response) => {
 });
 
 app.post("/players/", async (request, response) => {
-  const { playerDetails } = request.params;
+  const playerDetails  = request.body;
   const { playerName, jerseyNumber, role } = playerDetails;
   const addPlayerDetails = `
         INSERT INTO
