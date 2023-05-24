@@ -111,7 +111,7 @@ app.delete("/players/:playerId", async (request, response) => {
   const deletePlayerId = `
         DELETE FROM 
             cricket_team
-        WEHRE
+        WHERE
             player_id = ${playerId}
     `;
   await db.run(deletePlayerId);
