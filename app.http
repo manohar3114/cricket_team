@@ -5,7 +5,6 @@ GET http://localhost:3003/players/1/
 
 ###
 
-
 POST http://localhost:3003/players/
 Content-Type: application/json
 
@@ -16,12 +15,13 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3003/players/1
+PUT http://localhost:3003/players/3
 Content-Type:application/json
 
 {
-    playerId: 1,
-    playerName: "Lakshman",
-    jerseyNumber: 5,
-    role: "All-rounder"
+  "playerName": "Maneesh",
+  "jerseyNumber": 54,
+  "role": "All-rounder"
 }
+###
+DELETE http://localhost:3003/players/2
